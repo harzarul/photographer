@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.scss';
-import {Logo} from '../../utils/images';
+import {Logo, Logo2} from '../../utils/images';
 import {AiOutlineWhatsApp, AiFillInstagram, AiOutlineCopyrightCircle} from 'react-icons/ai';
 
 const Footer = () => {
@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
         
         <div className="footer__content-logo">
-          <img src={Logo} alt="logo" />
+          <img src={Logo2} alt="logo" />
         </div>
         
         <div className="footer__content-medsos">

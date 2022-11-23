@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {NavLink} from 'react-router-dom';
 import './Navbar.scss';
-import {Logo} from '../../utils/images';
+import {Logo, Logo2} from '../../utils/images';
 import {CgMoreO, CgCloseR} from 'react-icons/cg';
 
 
@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar__logo">
-        <img src={Logo} alt="logo" />
+        <img src={Logo2} alt="logo" />
       </div>
 
       <div className="navbar__links">
