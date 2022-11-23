@@ -1,0 +1,126 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url('../../assets/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: repeat;
+
+    .home__overlay{
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background: rgba(0, 0, 0, 0.6);
+
+       .home__cta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+
+        h1{
+            font-family: var(--font-main);
+            font-size: 4rem;
+            color: var(--color-white);
+            text-transform: capitalize;
+            margin-bottom: 1rem;
+
+            svg{
+                font-size: 4rem;
+            }
+        }
+
+        button{
+            padding: .4rem 2rem;
+            font-size: 1.5rem;
+            border-radius: 50px;
+            background-color: var(--color-gold);
+            font-family: var(--font-alt);
+            cursor: pointer;
+        }
+        :hover {
+            font-weight: bold;
+        }
+
+       }
+
+       .home__headline{
+        background-color: var(--color-black);
+        height: 5rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 3rem;
+        padding: 1rem 0;
+
+        p{
+            font-family: var(--font-alt);
+            font-size: 2rem;
+            color: var(--color-white);
+        }
+       }
+
+       .home__packages{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        .home__packages-card{
+            width: 100%;
+            max-width: 1800px;
+            padding: 2rem 4rem;
+        }
+       }
+
+        @media screen and (max-width: 1150px) {
+            .home__cta {
+                margin: 0 2rem;
+
+                h1 {
+                    font-size: 2.5rem;
+                }
+            }
+
+            .home__headline{
+                height: 4rem;
+
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        @media screen and (max-width: 850px) {
+            .home__cta{
+                align-items: flex-start;
+                h1{
+                    font-size: 2.2rem;
+
+                    svg{
+                        font-size: 1.5rem;
+                    }
+                }
+
+                button{
+                    font-size: 1.2rem;
+                }
+            }
+
+            .home__headline{
+                p{
+                    font-size: 1.2rem;
+                }
+                .exp{
+                    display: none;
+                }
+            }
+        }
+
+    }
+}

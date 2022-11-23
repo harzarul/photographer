@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap');
+
+:root{
+    --font-main: 'Exo 2', serif;
+    --font-alt: 'Poppins', sans-serif;
+
+    --color-black: #000;
+    --color-white: #fff;
+    --color-gray: rgb(121, 121, 121);
+    --color-yellow: rgba(255, 255, 255, 0.8);
+    --color-gold: rgba(255, 225, 92, 0.8);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+a{
+    color: unset;
+    text-decoration: none;
+}

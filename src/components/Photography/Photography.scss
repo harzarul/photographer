@@ -1,0 +1,220 @@
+.photography {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(255, 37, 84, 0.4);
+    margin: 2rem 6rem;
+    padding-bottom: 3rem;
+    border-radius: 2rem;
+
+    .photography__header {
+        color: var(--color-white);
+        font-family: var(--font-main);
+        font-size: 1.3rem;
+        margin: 2rem 6rem;
+        border-bottom: 1px solid var(--color-yellow);
+    }
+
+    .photography__content {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0 3rem;
+
+        .photography__content-text {
+            font-family: var(--font-alt);
+            font-size: 1.5rem;
+            color: var(--color-white);
+            
+            p{
+                margin-bottom: 1rem;
+            }
+        }
+
+        .photography__content-image {
+            display: none;
+            // justify-content: space-between;
+            // align-items: center;
+            img {
+                width: 60rem;
+                border-bottom-left-radius: 6rem;
+                border-top-right-radius: 6rem;
+            }
+
+            svg{
+                color: var(--color-white);
+                font-size: 6rem;
+                cursor: pointer;
+            }
+
+            .smallarrow{
+                display: none;
+                cursor: pointer;
+            }
+        }
+
+        .show{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    @media screen and (min-width: 2000px) {
+        margin: 2rem 8%;
+    }
+
+    @media screen and (max-width: 1750px) {
+        .photography__content{
+            .photography__content-image{
+                img{
+                    width: 40rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1450px) {
+        .photography__content {
+            .photography__content-image {
+                img {
+                    width: 35rem;
+                }
+            }
+        }
+    }
+   
+    @media screen and (max-width: 1250px) {
+        .photography__content {
+            .photography__content-image {
+                img {
+                    width: 32rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1150px) {
+        align-items: center;
+        .photography__content{
+            align-items: center;
+            flex-direction: column;
+
+            .photography__content-text{
+                margin-bottom: 1rem;
+            }
+
+            .photography__content-image{
+                img{
+                    width: 38rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 950px){
+        .photography__content{
+            .photography__content-image{
+                flex-direction: column;
+
+                img{
+                    width: 40rem;
+                }
+
+                .bigarrow{
+                    display: none;
+                }
+
+                .smallarrow{
+                    display: flex;
+        
+                    svg{
+                        margin: 1rem 4rem;
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width: 850px){
+        .photography__content{
+            .photography__content-image{
+                img{
+                    width: 32rem;
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width: 750px){
+        .photography__content{
+            .photography__content-image{
+                img{
+                    width: 27rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 650px){
+        .photography__content{
+            .photography__content-image{
+                img{
+                    width: 22rem;
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width: 550px){
+        .photography__content{
+            .photography__content-image{
+                margin: 0;
+                img{
+                    width: 17rem;
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width: 450px){
+        .photography__header{
+            font-size: 1rem;
+        }
+        
+        .photography__content{
+            .photography__content-text{
+                font-size: 1.3rem;
+            }
+
+            .photography__content-image{
+                img{
+                    width: 14rem;
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width: 400px){
+        .photography__header{
+            font-size: .7rem;
+        }
+        
+        .photography__content{
+            .photography__content-text{
+                font-size: 1rem;
+            }
+
+            .photography__content-image{
+                img{
+                    width: 12rem;
+                }
+            }
+        }
+    }
+  
+}

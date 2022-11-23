@@ -1,0 +1,112 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url('../../assets/personal7.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: repeat;
+
+    .login__overlay{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+
+        .login__container{
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .login__container-headtext{
+                h1{
+                    color: var(--color-white);
+                    font-size: 4rem;
+                    font-family: var(--font-main);
+                    margin-bottom: 1rem;
+                    border-bottom: 1px solid var(--color-yellow);
+                }
+            }
+
+            .login__container-table{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                .table__input{
+                    display: flex;
+                    flex-direction: column;
+                    margin-right: 7rem;
+
+                    input{
+                        margin-bottom: 2rem;
+                        color: var(--color-black);
+                        font-size: 1.7rem;
+                        background-color: var(--color-yellow);
+                        border-style: none;
+                        padding: .5rem 2rem;
+                        border-radius: 4rem;
+                    }
+                }
+
+                .table__button{
+                    button{
+                        font-size: 1.7rem;
+                        padding: .3rem 1.2rem;
+                        border-style: none;
+                        border-radius: 10px;
+                        font-family: var(--font-alt);
+                        background-color: var(--color-gold);
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        .login__overlay{
+            .login__container{
+                .login__container-headtext{
+                    h1{
+                        font-size: 2.5rem;
+                    }
+                }
+
+                .login__container-table{
+                    flex-direction: column;
+
+                    .table__input{
+                        margin: 0;
+                        input{
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    .table__button {
+                        button {
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .login__overlay{
+            .login__container{
+                .login__container-table{
+                    .table__input{
+                        input{
+                            width: 17rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

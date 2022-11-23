@@ -1,0 +1,103 @@
+.data{
+    display: none;
+}
+.show{
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 3rem 6rem;
+    padding: 4rem 0;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-size: 2.5rem;
+        color: var(--color-yellow);
+        font-family: var(--font-alt);
+        margin-bottom: 1rem;
+        border-bottom: 1px solid var(--color-white);
+    }
+
+    .data__img {
+        img {
+            border-radius: 50%;
+            height: 7rem;
+        }
+    }
+
+    .data__info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .data__info-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: var(--color-white);
+
+            h2 {
+                font-family: var(--font-main);
+                font-size: 2.4rem;
+                margin-bottom: 1rem;
+                color: var(--color-white);
+            }
+
+            p {
+                font-family: var(--font-alt);
+                font-size: 1.5rem;
+            }
+        }
+
+        .data__info-arrow {
+            width: 40%;
+            color: var(--color-white);
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-around;
+            font-size: 2rem;
+            cursor: pointer;
+            color: var(--color-gold);
+        }
+    }
+
+    @media screen and (min-width: 2000px) {
+        margin: 4rem 10%;
+    }
+
+    @media screen and (max-width: 1150px) {
+        margin: 3rem;
+
+        .data__info{
+            .data__info-text{
+
+                p{
+                    padding: 0 1rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+        h1{
+            font-size: 1.8rem;
+        }
+
+        .data__img{
+            img{
+                height: 9rem;
+            }
+        }
+
+        .data__info{
+            .data__info-text{
+                p{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

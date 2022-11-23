@@ -1,0 +1,25 @@
+.products{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url('../../assets/bg5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: repeat;
+
+    .products__overlay{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+
+        .product__border{
+            width: 100%;
+            height: 2rem;
+            background-color: rgba(252, 255, 94, 0.5);
+        }
+        
+    }
+}
