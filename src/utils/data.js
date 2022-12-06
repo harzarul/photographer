@@ -13,22 +13,22 @@ export const carousels = [
     {
         img: Carousel1,
         name: 'Bob',
-        comment: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.',
+        comment: 'เป็นตัวของตัวเอง คนอื่นเอาไปหมดแล้ว',
     },
     {
         img: Carousel2,
         name: 'Leman',
-        comment: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.onsectetur adipisicing elit.',
+        comment: 'Be yourself everyone else is already taken.',
     },
     {
         img: Carousel3,
         name: 'Mat Joe',
-        comment: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.ipsum dolor sit, amet ',
+        comment: 'Dadi dhewe wong liya wis dijupuk.',
     },
     {
         img: Carousel4,
         name: 'Dun Ketari',
-        comment: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.consectetur adipisicing ',
+        comment: '자신이 되십시오 다른 사람들은 이미 촬영되었습니다.',
     },
 ]
 
